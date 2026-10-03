@@ -1,6 +1,6 @@
 # Keisetsu
 
-A flashcard app for studying Japanese and Chinese vocabulary from your own decks.
+A flashcard program for studying Japanese and Chinese vocabulary from your own decks.
 
 ![Keisetsu studying the Japanese card 御来光 with the mb theme and the Maneki-Neko mascot](screenshots/keisetsu.png)
 
@@ -21,7 +21,7 @@ A flashcard app for studying Japanese and Chinese vocabulary from your own decks
 
 You don't need to install Python.
 
-Windows may say "Windows protected your PC" the first time, because the app isn't code-signed (signing costs money). Click **More info**, then **Run anyway**.
+Windows may say "Windows protected your PC" the first time, because the program isn't code-signed (signing costs money). Click **More info**, then **Run anyway**.
 
 Keep `Keisetsu.exe` in its folder with the files next to it. To put it on your Desktop, right-click `Keisetsu.exe` and choose **Show more options → Send to → Desktop (create shortcut)**.
 
@@ -36,7 +36,7 @@ python3 keisetsu.py
 
 On Debian, Ubuntu and Linux Mint you may need `sudo apt install python3-tk python3-pandas python3-pil python3-pil.imagetk` instead of `pip`.
 
-To add Keisetsu to your app menu (so you can pin it to the panel), run `./install_launcher.sh`.
+To add Keisetsu to your program menu (so you can pin it to the panel), run `./install_launcher.sh`.
 
 ### macOS
 
