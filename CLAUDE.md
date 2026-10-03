@@ -20,6 +20,10 @@ A Tkinter flashcard app for studying Japanese (romaji → kana) and Chinese (num
 
 The repo is public, so `.gitignore` keeps it to what the app needs. Of `vocab_lists/`, only the sample deck is tracked, and of `themes/`, only `mb/*.png`. Personal settings, `.psd`/`.zip` files, the old `keisetsuog.py`/`keisetsurev2.py`, and generated files (`keisetsu.ico`, `build/`, `dist/`) stay local. Keep this in step with `SAMPLE_DECKS`/`SAMPLE_THEMES` in `build_windows.py`. `.gitattributes` keeps `.sh` files on LF line endings.
 
+## Releasing
+
+Public repo: https://github.com/embe-mb/Keisetsu (branch `main`). Pushing a tag `vX.Y.Z` runs `.github/workflows/release.yml` on a GitHub Windows machine. It runs `build_windows.py` and creates the GitHub Release with `Keisetsu-Windows.zip` attached. `.github/release_notes.py` writes the notes from that build's Build Log entry, and it fails the run if the tag doesn't match `BUILD_VERSION`. So, to release: commit the build (version, date and Build Log entry included), `git push`, then `git tag vX.Y.Z` and `git push origin vX.Y.Z`. The README's download link always points to the latest release.
+
 ## Windows .exe
 
 - `APP_DIR` is Keisetsu's folder: the folder holding the .exe when frozen (`sys.frozen`), otherwise the folder holding `keisetsu.py`. Keisetsu `chdir`s there at startup, so relative paths (settings, `themes/`, `vocab_lists/`, `logo.png`) work however it's launched. Never locate files with `__file__` directly; it points into PyInstaller's unpack folder in the .exe. `vocab_manager.py`'s `BASE_DIR` follows the same rule.
@@ -47,6 +51,7 @@ These are set by `BUILD_VERSION` and `BUILD_DATE` near the top of `keisetsu.py`,
 ## Build Log
 
 ### Build 1.11.1 — October 3, 2026
+- First public release, at https://github.com/embe-mb/Keisetsu, with a standalone Windows download (`Keisetsu-Windows.zip`).
 - The download now includes only the files Keisetsu needs, plus one sample deck ("Select this deck to test the program!", which walks new users through answering a card and points them to the CSV Manager) and one sample theme (`mb`, its `.png` files only, no `.psd`). The zip went from 68 MB to 46 MB. The public source code will follow the same rule.
 
 ### Build 1.11.0 — October 3, 2026
