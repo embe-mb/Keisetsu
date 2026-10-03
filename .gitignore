@@ -1,0 +1,27 @@
+# Personal settings
+keisetsu_settings.json
+
+# Decks: only the sample deck is public
+vocab_lists/*
+!vocab_lists/Select this deck to test the program!.csv
+
+# Themes: only the mb theme's .png files are public
+themes/*
+!themes/mb/
+themes/mb/*
+!themes/mb/*.png
+
+# Art sources and archives
+*.psd
+*.zip
+
+# Old versions of the app
+keisetsuog.py
+keisetsurev2.py
+
+# Generated files
+keisetsu.ico
+__pycache__/
+*.pyc
+build/
+dist/
