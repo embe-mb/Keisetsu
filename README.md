@@ -2,6 +2,8 @@
 
 A flashcard app for studying Japanese and Chinese vocabulary from your own decks.
 
+![Keisetsu studying the Japanese card 御来光 with the mb theme and the Maneki-Neko mascot](screenshots/keisetsu.png)
+
 - **Japanese:** type romaji and it turns into kana as you type (`taberu` → たべる).
 - **Chinese:** type numbered pinyin and it turns into tone marks (`ni3hao3` → nǐhǎo).
 - Cards you miss come back later in the deck until you get them right.
