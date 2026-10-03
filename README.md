@@ -72,6 +72,14 @@ python build_windows.py
 
 The result is in `dist/`.
 
+##Planned features for the future
+
+- Ability to create image based decks
+- Ability to embed audio files in deck creation to create listening based decks (eg. type what you hear, etc.)
+- .zip file importation to accommodate for visual/audio based tests (folder structure for text questions/audio questions)
+- Stroke order based decks
+- Various game modes
+
 ## License
 
 [MIT](LICENSE)
