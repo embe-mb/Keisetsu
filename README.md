@@ -72,7 +72,7 @@ python build_windows.py
 
 The result is in `dist/`.
 
-##Planned features for the future
+## Planned features for the future
 
 - Ability to create image based decks
 - Ability to embed audio files in deck creation to create listening based decks (eg. type what you hear, etc.)
